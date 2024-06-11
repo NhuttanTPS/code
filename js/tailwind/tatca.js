@@ -1,22 +1,3 @@
-// // Hiển thị cafe
-// document.getElementById('lipton').addEventListener('click', function () {
-//     const ids = [
-//         'ancafe', 'anchitietcafe', 'antrasua', 'anchitiettrasua',
-//         'annuocep', 'anchitietnuocep', 'ansinhto', 'anchitietsinhto',
-//         'anche', 'anchitietche', 'anbanhtrang', 'anchitietbanhtrang',
-//         'ancavien', 'anchitietcavien', 'annuocchai', 'anchitietnuocchai',
-//         'antotuong', 'anchitiettotuong'
-//     ];
-
-//     ids.forEach(id => {
-//         const an = document.getElementById(id);
-//         if (an.style.display === 'flex' || an.style.display === '') {
-//             an.style.display = 'none';
-//         } else {
-//             an.style.display = 'flex';
-//         }
-//     });
-// });
 function show_item(tenmon) {
     console.log(tenmon)
     $('.mon_item').addClass('hidden')
@@ -26,3 +7,20 @@ function show_item(tenmon) {
         $('#' + tenmon).removeClass('hidden')
     }
 }
+document.addEventListener('DOMContentLoaded', (event) => {
+    const filterInput = document.getElementById('filterInput');
+    const dataContainer = document.getElementById('dataContainer');
+    const items = dataContainer.getElementsByClassName('dataItem');
+    filterInput.addEventListener('input', function () {
+        const filterValue = filterInput.value.toLowerCase();
+
+        Array.from(items).forEach(function (item) {
+            const itemName = item.textContent.toLowerCase();
+            if (itemName.includes(filterValue)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
