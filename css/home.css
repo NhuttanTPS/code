@@ -1,0 +1,130 @@
+.textcafe {
+    font-family: cursive;
+    font-size: 30px;
+    color: blue;
+}
+
+.textthienphuc {
+    font-family: serif;
+    font-size: 45px;
+    color: red;
+    text-align: center;
+    margin-bottom: -2px;
+    margin-top: -14px;
+}
+
+.thongtin {
+    margin-top: -2px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+}
+
+.sizehinhanh {
+    width: 125px;
+    height: 180px;
+    margin-right: 3px;
+}
+
+.marginhinhanh {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 5px;
+    padding: 2px
+}
+
+.marginbody {
+    margin: 5;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: middle;
+    /* Giúp căn giữa theo chiều dọc nếu cần */
+    color: gray;
+}
+
+.giuatrang {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+    margin-top: 10px;
+
+}
+
+.border {
+    border-radius: 30;
+    border-style: solid;
+    border-width: 2px;
+    /* border-color: yellow; */
+    background-color: #ddd;
+}
+
+.buttoncenter {
+    text-align: center;
+}
+
+.custom-button {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 5px;
+    padding: 7px;
+}
+
+.custom-button button {
+    background-color: #ddd;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.texttitle {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.giohang {
+    position: fixed;
+    /* : Giúp cố định vị trí của icon giỏ hàng trên trang, luôn hiển thị ở cùng một vị trí ngay cả khi cuộn trang.  */
+    bottom: 10px;
+    right: 10px;
+    /* : Đặt vị trí của icon giỏ hàng ở góc trên cùng bên phải của trang, cách biên trên và phải 10px.  */
+    /* background-color: #ff6f61; */
+    /* : Đặt màu nền cho icon giỏ hàng.  */
+    color: white;
+    /* : Đặt màu chữ cho icon là màu trắng.  */
+    padding: 10px;
+    /* 
+    : Thêm khoảng cách bên trong icon giỏ hàng để làm cho nó dễ nhìn hơn.  */
+    border-radius: 50%;
+    /* : Làm cho icon có viền bo tròn hoàn toàn, tạo hình tròn.  */
+    text-align: center;
+    /* : Canh giữa văn bản bên trong icon.  */
+    font-size: 24px;
+    /* : Đặt kích thước font cho icon.  */
+    cursor: pointer;
+    /* : Thay đổi con trỏ chuột thành biểu tượng bàn tay khi hover qua icon, làm cho nó trông giống một nút nhấn.  */
+    z-index: 1000;
+    /* : Đảm bảo icon giỏ hàng luôn hiển thị trên các thành phần khác của trang. */
+}
+
+.giohang:hover {
+    background-color: #ff4a33;
+    /* Đổi màu khi hover */
+}
+
+.textmon {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    width: 130px;
+}
+
+.hidden {
+    display: none;
+}
