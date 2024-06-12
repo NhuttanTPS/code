@@ -1,2 +1,2 @@
 <?php
-$filename = 'goimon';
+$filename = 'admin';
