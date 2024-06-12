@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('asia/ho_chi_minh');
-// error_reporting(0);
+error_reporting(0);
 define("BASE_URL", getcwd());
 define("INCLUDES", BASE_URL . "/includes/");
 define("CONTROLS", BASE_URL . "/controller/");

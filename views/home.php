@@ -92,7 +92,7 @@
             </div>
         </div>
         <!-- Lipton -->
-        <div id="lipton" class="mon_ite">
+        <div id="lipton" class="mon_item">
             <div class="texttitle dataItem" id="anlipton">
                 <p>LIPTON</p>
             </div>
