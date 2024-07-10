@@ -76,18 +76,18 @@
                 <p>CAFE</p>
             </div>
             <div class="marginhinhanh" id="anchitietcafe">
-                <div class="dataItem">
-                    <img src="Vendor/img/lycafe.png" class="sizehinhanh" />
-                    <p class="textmon">Cafe đá 12.000</p>
-                </div>
-                <div class="dataItem">
-                    <img src="Vendor/img/lycafe.png" class="sizehinhanh" />
-                    <p class="textmon">Cafe sữa đá 15.000</p>
-                </div>
-                <div class="dataItem">
-                    <img src="Vendor/img/lycafe.png" class="sizehinhanh" />
-                    <p class="textmon">Bạc Xỉu 15.000</p>
-                </div>
+                <?php
+                insert('123', 'test');
+                foreach (danhmuc() as $r) { ?>
+                    <div class="dataItem">
+                        <img src="Vendor/img/<?= $r->HINHANH ?>" class="sizehinhanh" />
+                        <p class="textmon"><?= $r->TENHH ?> <?= str_replace(',', '.', number_format($r->GIA))   ?></p>
+                    </div>
+                <?php }
+
+                ?>
+
+
             </div>
         </div>
         <!-- Lipton -->
