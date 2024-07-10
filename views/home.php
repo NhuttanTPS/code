@@ -10,7 +10,6 @@
 </head>
 
 <body class="marginbody">
-
     <div>
         <p class="textcafe">Tiệm cafe</p>
         <p class="textthienphuc">Thiên Phúc</p>

@@ -13,8 +13,14 @@
 </head>
 
 <body class="marginbody">
-    <div>
+    <div style="display: flex;">
         <p class="textcafe">Tiệm cafe</p>
+        <a href="danhmuc">
+            <img class="iconlist" src="Vendor/icon/list.png" alt="list hàng hòa">
+        </a>
+    </div>
+
+    <div>
         <p class="textthienphuc">Thiên Phúc</p>
     </div>
 
@@ -50,11 +56,11 @@
             <img src="Vendor/icon/ban.png" class="marginban" />
             <p class="margintextban">Bàn 04</p>
         </div>
-        <div onclick="show_chitiet('5','ấdđsđ')">
+        <div onclick="show_chitiet('5','Cafe (ít đường)')">
             <img src="Vendor/icon/ban.png" alt="Flashing Image" class="marginban flashing-image" />
             <p class="margintextban">Bàn 05</p>
         </div>
-        <div onclick="show_chitiet('6','chi tiết')">
+        <div onclick="show_chitiet('6',)">
             <img src="Vendor/icon/ban.png" class="marginban" />
             <p class="margintextban">Bàn 06</p>
         </div>
@@ -75,14 +81,15 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                        Close
+                        Thanh toán
                     </button>
-                    <button type="button" class="btn btn-primary">Understood</button>
+                    <button type="button" class="btn btn-primary" onclick="close">Đóng</button>
                 </div>
             </div>
         </div>
     </div>
 
+    
 </body>
 
 </html>

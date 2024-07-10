@@ -6,8 +6,10 @@ switch ($components) {
     case "admin":
         require_once CONTROLS . "admin.php";
         break;
+    case "danhmuc":
+        require_once CONTROLS . "danhmuc.php";
+        break;
     default:
         $filename = "home";
         break;
 }
-
